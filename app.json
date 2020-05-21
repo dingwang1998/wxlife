@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/message/message",
+    "pages/profile/profile",
+    "pages/contact/contact"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3A4862",
+    "navigationBarTitleText": "本地宝",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#444",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "./assests/tabs/home.png",
+      "selectedIconPath": "./assests/tabs/home-active.png"
+    },{
+      "pagePath": "pages/message/message",
+      "text": "消息",
+      "iconPath": "./assests/tabs/message.png",
+      "selectedIconPath": "./assests/tabs/message-active.png"
+    },{
+      "pagePath": "pages/profile/profile",
+      "text": "我的",
+      "iconPath": "./assests/tabs/profile.png",
+      "selectedIconPath": "./assests/tabs/profile-active.png"
+    },{
+      "pagePath": "pages/contact/contact",
+      "text": "联系我们",
+      "iconPath": "./assests/tabs/contact.png",
+      "selectedIconPath": "./assests/tabs/contact-active.png"
+    }]
+  }
+}
