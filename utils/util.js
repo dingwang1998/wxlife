@@ -14,6 +14,18 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const fetch = (url,data) => {
+    return new Promise((resolve,reject) =>{
+      wx.request({
+        url: `https://locally.uieee.com/${url}`,
+        data:data,
+        success: resolve,
+        fail:reject
+      })
+  })
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  fetch:fetch
 }

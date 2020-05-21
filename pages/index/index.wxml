@@ -1,49 +1,17 @@
 <swiper class="banner">
-    <swiper-item >
-        <image  src="../../assests/images/banner-01.png" mode="aspectFill" />
-    </swiper-item>
-    <swiper-item >
-        <image  src="../../assests/images/banner-02.png" mode="aspectFill"/>
+    <swiper-item wx:for="{{slides}}" wx:key="id">
+        <navigator wx:if="{{item.link}}" url="{{item.link}}">
+            <image  src="{{item.image}}" mode="aspectFill" />
+        </navigator>
+        <image  wx:else src="{{item.image}}" mode="aspectFill" />
     </swiper-item>
 </swiper>
 
 <view class="nav">
-    <view class="nav-item">
-        <image src="../../assests/icons/grid-01.png" />
-        <text >美食</text>
-    </view>
-    <view class="nav-item">
-        <image src="../../assests/icons/grid-02.png" />
-        <text >洗浴足疗</text>
-    </view>
-    <view class="nav-item">
-        <image src="../../assests/icons/grid-03.png" />
-        <text >结婚啦</text>
-    </view>
-    <view class="nav-item">
-        <image src="../../assests/icons/grid-04.png" />
-        <text >KTV</text>
-    </view>
-    <view class="nav-item">
-        <image src="../../assests/icons/grid-05.png" />
-        <text >找工作</text>
-    </view>
-    <view class="nav-item">
-        <image src="../../assests/icons/grid-06.png" />
-        <text >辅导班</text>
-    </view>
-    <view class="nav-item">
-        <image src="../../assests/icons/grid-07.png" />
-        <text >汽车保养</text>
-    </view>
-    <view class="nav-item">
-        <image src="../../assests/icons/grid-08.png" />
-        <text >租房</text>
-    </view>
-    <view class="nav-item">
-        <image src="../../assests/icons/grid-09.png" />
-        <text >装修</text>
-    </view>
+    <navigator url="/pages/list/list?id={{item.id}}" class="nav-item" wx:for="{{categories}}" wx:key="id">     
+        <image src="{{item.icon}}" />
+        <text >{{item.name}}</text>
+    </navigator>
 </view>
 
 <view class="footer">

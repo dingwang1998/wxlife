@@ -2,6 +2,7 @@
   width: 100%;
   height: 380rpx;
 }
+.banner navigator,
 .banner image{
   width: 100%;
   height: 100%;
@@ -31,8 +32,6 @@
   width: 70rpx;
   height: 70rpx;
 }
-
-
 .footer{
   display: flex;
   margin-top: 10rpx;
