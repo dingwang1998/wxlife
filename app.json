@@ -5,7 +5,8 @@
     "pages/list/list",
     "pages/message/message",
     "pages/profile/profile",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/detail/detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
